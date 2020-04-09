@@ -93,6 +93,8 @@ public class ExtensionVersion {
     @ManyToMany
     List<Extension> bundledExtensions;
 
+    String container;
+
 
     /**
      * Convert to a JSON object without URLs.
@@ -155,7 +157,16 @@ public class ExtensionVersion {
         entry.timestamp = this.getTimestamp().toString();
         entry.displayName = this.getDisplayName();
         entry.description = this.getDescription();
+        entry.container = this.getContainer();
         return entry;
+    }
+
+    public String getContainer() {
+        return container;
+    }
+
+    public void setContainer(String container) {
+        this.container = container;
     }
 
 	public long getId() {
