@@ -156,6 +156,7 @@ public class ExtensionProcessor implements AutoCloseable {
             extension.setGalleryTheme(galleryBanner.path("theme").textValue());
         }
         extension.setQna(packageJson.path("qna").textValue());
+        extension.setContainer(packageJson.path("container").textValue());
         return extension;
     }
 

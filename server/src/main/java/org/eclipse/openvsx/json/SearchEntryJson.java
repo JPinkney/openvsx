@@ -39,4 +39,8 @@ public class SearchEntryJson {
     @Nullable
     public String description;
 
+    // The name of the container that you want to run the workspace in
+    @Nullable
+    public String container;
+
 }
