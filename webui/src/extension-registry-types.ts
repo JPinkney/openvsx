@@ -69,6 +69,7 @@ export interface Extension extends ExtensionRaw {
     readonly badges?: Badge[];
     readonly dependencies?: ExtensionReference[];
     readonly bundledExtensions?: ExtensionReference[];
+    readonly container?: string;
 }
 
 export interface Badge {
